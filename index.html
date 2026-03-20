@@ -32,7 +32,6 @@
     #hero { min-height:100vh; display:flex; flex-direction:column; justify-content:flex-end; padding:0 56px 80px; position:relative; overflow:hidden; }
     .hero-bg-text { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-family:var(--font-display); font-size:clamp(80px,18vw,220px); letter-spacing:-4px; color:transparent; -webkit-text-stroke:1px var(--border); white-space:nowrap; pointer-events:none; user-select:none; opacity:.6; }
     .hero-line { position:absolute; top:0; bottom:0; left:56px; width:1px; background:linear-gradient(to bottom,transparent,var(--red),transparent); opacity:.4; }
-    .hero-counter { font-size:11px; letter-spacing:.2em; color:var(--red); margin-bottom:20px; opacity:0; animation:fadeUp .5s ease forwards .3s; }
     .hero-name { font-family:var(--font-display); font-size:clamp(56px,10vw,130px); line-height:.92; letter-spacing:2px; margin-bottom:28px; opacity:0; animation:fadeUp .6s ease forwards .45s; }
     .hero-name .line2 { color:var(--red); }
     .hero-bottom { display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:24px; opacity:0; animation:fadeUp .6s ease forwards .6s; }
@@ -48,7 +47,6 @@
     section { padding:110px 56px; }
     .section-eyebrow { display:flex; align-items:center; gap:14px; margin-bottom:12px; }
     .section-eyebrow::before { content:''; display:block; width:32px; height:1px; background:var(--red); }
-    .section-num { font-size:11px; letter-spacing:.2em; color:var(--red); }
     .section-title { font-family:var(--font-display); font-size:clamp(40px,6vw,72px); letter-spacing:2px; line-height:1; margin-bottom:64px; }
     #about { background:var(--bg2); }
     .about-layout { display:grid; grid-template-columns:1.2fr 1fr; gap:80px; align-items:start; }
@@ -69,11 +67,11 @@
     .skill-bar-track { height:2px; background:var(--border); position:relative; overflow:hidden; }
     .skill-bar-fill { position:absolute; top:0; left:0; bottom:0; background:var(--red); width:0; transition:width 1.4s cubic-bezier(.16,1,.3,1); }
     .skill-pct { font-size:11px; color:var(--muted); text-align:right; }
-    #ticker { background:var(--red); padding:14px 0; overflow:hidden; }
+    #ticker { background:#ffffff; padding:14px 0; overflow:hidden; }
     .ticker-track { display:flex; width:max-content; animation:ticker 25s linear infinite; }
     .ticker-track:hover { animation-play-state:paused; }
-    .ticker-item { display:flex; align-items:center; gap:12px; padding:0 32px; font-family:var(--font-display); font-size:16px; letter-spacing:2px; color:#fff; white-space:nowrap; }
-    .ticker-dot { width:5px; height:5px; background:rgba(255,255,255,.5); border-radius:50%; flex-shrink:0; }
+    .ticker-item { display:flex; align-items:center; gap:12px; padding:0 32px; font-family:var(--font-display); font-size:16px; letter-spacing:2px; color:#050505; white-space:nowrap; }
+    .ticker-dot { width:5px; height:5px; background:#e8132a; border-radius:50%; flex-shrink:0; }
     @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
     #certifications { background:var(--bg); }
     .certs-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:2px; }
@@ -162,7 +160,6 @@
   <section id="hero">
     <div class="hero-line"></div>
     <div class="hero-bg-text">RAHUL</div>
-    <p class="hero-counter">// 001 &nbsp;—&nbsp; Java Developer &nbsp;·&nbsp; ANITS, Vizag</p>
     <h1 class="hero-name">PATTEPU<br>TEJA <span class="line2">RAHUL</span></h1>
     <div class="hero-bottom">
       <p class="hero-bio">Java developer passionate about building scalable applications and solving real-world problems through efficient code. CS student at Anil Neerukonda Institute of Technology and Sciences.</p>
@@ -175,7 +172,7 @@
   </section>
 
   <section id="about">
-    <div class="section-eyebrow reveal"><span class="section-num">01 — About</span></div>
+    <div class="section-eyebrow reveal"></div>
     <h2 class="section-title reveal">Who I Am</h2>
     <div class="about-layout">
       <div class="about-text reveal">
@@ -185,16 +182,16 @@
         <a href="#contact" class="btn btn-outline">Download Resume →</a>
       </div>
       <div class="stats-list reveal">
-        <div class="stat-row"><div class="stat-lbl">Years coding</div><div class="stat-val">2+</div></div>
-        <div class="stat-row"><div class="stat-lbl">Technologies</div><div class="stat-val">4+</div></div>
-        <div class="stat-row"><div class="stat-lbl">Projects built</div><div class="stat-val">3</div></div>
-        <div class="stat-row"><div class="stat-lbl">Problems solved</div><div class="stat-val">∞</div></div>
+        <div class="stat-row"><div class="stat-lbl">Years coding</div><div class="stat-val">1+</div></div>
+        <div class="stat-row"><div class="stat-lbl">Technologies</div><div class="stat-val">2+</div></div>
+        <div class="stat-row"><div class="stat-lbl">Projects built</div><div class="stat-val">2</div></div>
+        <div class="stat-row"><div class="stat-lbl">Problems solved</div><div class="stat-val">0</div></div>
       </div>
     </div>
   </section>
 
   <section id="skills">
-    <div class="section-eyebrow reveal"><span class="section-num">02 — Skills</span></div>
+    <div class="section-eyebrow reveal"></div>
     <h2 class="section-title reveal">What I Work With</h2>
     <div class="skills-list">
       <div class="skill-row reveal">
@@ -258,7 +255,7 @@
   </div>
 
   <section id="certifications">
-    <div class="section-eyebrow reveal"><span class="section-num">03 — Certifications</span></div>
+    <div class="section-eyebrow reveal"></div>
     <h2 class="section-title reveal">Achievements</h2>
     <div class="certs-grid">
       <div class="cert-card reveal">
@@ -279,7 +276,7 @@
   </section>
 
   <section id="projects">
-    <div class="section-eyebrow reveal"><span class="section-num">04 — Projects</span></div>
+    <div class="section-eyebrow reveal"></div>
     <h2 class="section-title reveal">Things I've Built</h2>
     <div class="projects-grid">
       <div class="project-card reveal">
@@ -310,7 +307,7 @@
   </section>
 
   <section id="contact">
-    <div class="section-eyebrow reveal"><span class="section-num">05 — Contact</span></div>
+    <div class="section-eyebrow reveal"></div>
     <h2 class="section-title reveal">Let's Connect</h2>
     <div class="contact-layout">
       <div class="reveal">
